@@ -1,8 +1,6 @@
 require 'dotenv/load'
 require 'bundler'
-Bundler.require
-
-require_relative 'models/model.rb'
+require 'uri'
 
 class ApplicationController < Sinatra::Base
 
