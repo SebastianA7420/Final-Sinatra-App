@@ -1,6 +1,6 @@
 require 'dotenv/load'
 require 'bundler'
-require 'uri'
+
 
 class ApplicationController < Sinatra::Base
 
@@ -8,6 +8,9 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   post '/result' do 
+    #puts params 
+    @location = params[:input1]
+    @job_type = params[:input2]
     erb :result
   end
 end
