@@ -5,7 +5,7 @@ key = EVI("Id")
 uri = URI.parse(url + key)
 #prepare post data
 post_args = {
-	'content' => "{ keywords: 'it', location: 'Bern'}"
+	'content' => "{ keywords: 'location', location: 'Bern'}"
 }
 #send request to the server
 resp, data = Net::HTTP.post_form(uri, post_args)

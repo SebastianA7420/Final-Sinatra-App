@@ -2,8 +2,12 @@ require 'dotenv/load'
 require 'bundler'
 
 
-class ApplicationController < Sinatra::Base
+require 'net/http'
+Bundler.require
 
+
+
+class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
