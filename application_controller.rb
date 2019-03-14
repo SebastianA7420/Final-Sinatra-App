@@ -1,7 +1,8 @@
 require 'dotenv/load'
 require 'bundler'
 Bundler.require
-
+require 'net/http'
+require 'uri'
 class ApplicationController < Sinatra::Base
 
   get '/' do
